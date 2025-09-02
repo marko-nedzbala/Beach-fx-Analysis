@@ -1,0 +1,21 @@
+
+python -m venv /path/to/new/virtual/environment
+
+
+Git commands
+git add .
+git commit -m "Message"
+git remote add origin remote_repo_url
+git remote -v
+git push -u origin main
+
+
+
+
+
+
+
+
+
+
+
