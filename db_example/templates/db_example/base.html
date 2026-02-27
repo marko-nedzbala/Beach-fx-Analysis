@@ -26,7 +26,7 @@
              if you define them separately, 1 of the pair will always be undefined  -->
             <!-- <li data-pt-n="{{ i.RepPtN }}">Northings {{ i.RepPtN }}</li> -->
             <!-- <li data-pt-e="{{ i.RepPtE }}">Eastings {{ i.RepPtE }}</li> -->
-            <li id="django-data" data-pt-n="{{ i.RepPtN }}" data-pt-e="{{ i.RepPtE }}" hidden></li>
+            <li class="django-data" data-pt-n="{{ i.RepPtN }}" data-pt-e="{{ i.RepPtE }}" hidden name="django-data"></li>
             
         {% endfor %}
     </ul>
@@ -46,7 +46,9 @@
     <!-- <script src="{% static 'app.js' %}"></script> -->
 
     <script>
-        let elements = document.querySelectorAll('li');
+        // let elements = document.querySelectorAll('li');
+        // let elements = document.getElementsByName('django-data');
+        let elements = document.getElementsByTagName ('li');
         let container = document.getElementById('details');
         let p = document.getElementById('id');
 
